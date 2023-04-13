@@ -1,0 +1,128 @@
+
+
+body{
+    background-color: #84E1AD;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+}
+
+header{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(67, 240, 145), rgb(31, 107, 64) );
+    background-color: rgb(31, 109, 65);
+    padding: 60px;
+    margin: -10px;
+    }
+    header > h1{
+        
+    }
+    header > h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 13px;
+        color: rgb(211, 205, 205);
+    }
+    
+    a{
+        color: white;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+    h3{
+        background-color: #2FA866;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
+    
+    nav{
+        margin-top: -25px;
+        margin-right: 10px;
+        font-family: sans-serif;
+        color: white;
+        font-weight: bold;
+    }
+
+    nav > a:hover{
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+    article{
+        font-family: sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #C4E9D4;
+    background-color: rgb(31, 109, 65);
+    padding: 10px;
+    margin: -10px;
+
+    }
+
+    p#sensao{
+        background-color: #84E1AD;
+        color: black;
+    }
+
+    section#assuntos{
+        text-indent: 20px;
+        font-family: idroid;
+        color: darkgreen;
+        background-color: white;
+        margin: 10px;
+    }
+    p#hist{
+        background-color: white;
+        text-align: justify;
+        text-indent: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        color: black;
+        margin: 10px;
+    }
+
+    p#histo{
+        background-color: white;
+        text-align: justify;
+        text-indent: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        color: black;
+        margin: 20px;
+    }
+    section#historia{
+        
+        text-indent: 20px;
+        font-family: idroid;
+        color: darkgreen;
+        background-image: linear-gradient(to right, rgb(199, 240, 199), white);
+        margin: 10px;
+    }
+    img{
+        width: 100%;
+    }
+    div{
+        width: 30%; 
+        margin: auto;
+    }
+
+    span{
+        font-weight: bold;
+        font-size: large;
+        color: darkgreen;
+    }
+    
+    p#video{
+        
+        background-color: rgb(1, 68, 1);
+        margin: auto;
+        margin: 20px 20px 20px 20px;
+        
+    }
+
+

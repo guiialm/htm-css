@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, #044389, #7CAFC4);
+    
+}
+main{
+    background-color: wheat;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px black;
+}
+h1, h2{
+    color: #FFAD05;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 2px black;
+    
+}
+p{
+    background-color: wheat;
+}
+
