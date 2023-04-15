@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+		margin: 0;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.parallax {
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.div1, .div2, .div3, .div4, .div5 {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		color: #fff;
+		text-align: center;
+		padding: 50px;
+		font-size: 3em;
+		font-weight: bold;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
+	.div1 {
+		background-color: #007bff;
+	}
+
+	.div2 {
+		background-color: #28a745;
+	}
+
+	.div3 {
+		background-color: #ffc107;
+	}
+
+	.div4 {
+		background-color: #dc3545;
+	}
+
+	.div5 {
+		background-color: #6c757d;
+	}
+
+	.content {
+		padding: 50px;
+		background-color: #fff;
+	}
+	
+    </style>
+</head>
+<body>
+    <div class="parallax" style="background-image: url('https://c.wallhere.com/photos/c0/78/1200x1200_px_Fingers-1189723.jpg!d')">
+		<div class="div1">Div 1</div>
+		<div class="div2">Div 2</div>
+		<div class="div3">Div 3</div>
+		<div class="div4">Div 4</div>
+		<div class="div5">Div 5</div>
+	</div>
+	<div class="content">
+		<p>Seu conteúdo aqui</p>
+	</div>
+    
+</body>
+</html>
