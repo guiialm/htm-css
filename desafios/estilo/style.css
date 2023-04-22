@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    background-color: darkgray;
+    /*tamanho minimo do html do body*/
+    min-width: 100vh;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 50px;
+    /*text transform uppercase deixa em letras maiusculas, mas vamos usar o small caps*/
+    font-variant: small-caps;
+}
+
+header p{
+    padding-bottom: 50px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /*altura entre as linhas, ajuda a ler*/
+    line-height: 2em;
+    padding-left: 30px;
+
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(83, 81, 81);
+    color: white;
+
+}
+
+section.imagem p{
+    background-color: grey;
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+a:hover{
+    background-color: rgb(185, 86, 86);
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+
+/*quando for colocar por exemplo, um link no footer, usar " header a, footer a{}
+e quando for colcoar efeititos usar : "header a:hover, footer a:hover{} tudo junro*/
