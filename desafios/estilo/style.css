@@ -51,6 +51,7 @@ section{
     /*altura entre as linhas, ajuda a ler*/
     line-height: 2em;
     padding-left: 30px;
+    
 
 }
 
@@ -61,15 +62,40 @@ section.normal{
 }
 
 section.imagem{
+    
     background-color: rgb(83, 81, 81);
-    color: white;
     font-family: var(--font02);
     font-size: 25px;
+    background-size: cover;
+    /*o comando abaixo fixed, deixa a imagem paralax. simples assim.*/
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url('../desafio012/imagens/background001.jpg');
+    /*tem que alinhar a imagem, para se adaptar, com o comando abaixo, basta ver também a onde esta a melhor parte, em que canto na imagem.*/
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url('../desafio012/imagens/background002.jpg');
+    background-position: right   center;
 }
 
 section.imagem p{
-    background-color: grey;
-    width: 400px;
+    /*esse display inline block, deixa ''caixa'' ajustavel na tela*/
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.445);
+    color: rgba(236, 144, 5, 0.685);
+    font-weight: bold;
+    /*sombras no testo sao sempre 3 e a cor*/
+    text-shadow: 1px 1px 1px rgb(88, 88, 86);
+}
+
+section.imagem p:hover{
+    margin-left: 10px;
+    color: palevioletred;
+    transition-duration: 1s;
 }
 
 footer{
