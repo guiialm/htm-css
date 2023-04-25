@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        h1{
+            background-color: rgb(13, 156, 32);
+            color: orange;
+            box-shadow: 1px 1px 1px 1px black;
+            width: 497px;
+            text-indent: 1px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: purple;
+        }
+
+        table{
+            border: 3px solid black;
+            width: 500px;
+
+        }
+
+        thead, tfoot{
+            background-image: linear-gradient(to right, rgb(241, 159, 6), rgb(172, 9, 9) );
+            color: white;
+        }
+
+        tr{
+            border: 1px solid black;
+        }
+
+        td#xula{
+            background-color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        td, th{
+            
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+
+            usar tambem scope e row 
+            tipo <th scope ="col"> -- usa quqnado e embaixo da linha
+                    th scope ="row"> -- quando e na mesma linha
+            *lembrando que td e sempre dado, e th sempre titulo
+    -->
+    <table>
+        <caption>Numerusitos de la populacion</caption>
+        <thead>
+            <tr> <!--linha-->
+                <th scope="col">Estado</th><!--titulo-->
+                <th scope="col">População</th><!--titulo-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--linha-->
+                <td id="xula">São paulo</td> <!--dados-->
+                <td id="xula" class="num">45.982.982</td><!--dados-->
+            </tr>
+            <tr>
+                <td id="xula" >Minas gerais</td><!--dados-->
+                <td id="xula" class="num">26.535.32 </td>
+            </tr><!--linha-->
+            <tr>
+                <td id="xula" >Rio de janeiro</td>
+                <td id="xula" class="num">14.242.121</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><!--linha-->
+                <th scope="row">Total de habitantes</th><!--titulo-->
+                <td class="num">000000</td><!--dados-->
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
