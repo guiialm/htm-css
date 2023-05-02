@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Rock+Salt&display=swap');
 
 /*RESET*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -39,14 +40,18 @@ header li, a{
 header li{
     margin: 0px 15px;
 }
+
 /* TEMOS QUE TIRAR A MARGEM DO 'HOME' E 'CONTATOS'*/
+
 header li :first-child{
     margin-left:0 ;
 }
 header li:last-child{
     margin-right: 0;
 }
+
 /* ESSA DOIDERA AI, DEIXA  OS NAVS QUANDO DIMINUI A PAG EM BAIXO DA IMG*/
+
 @media(max-width: 700px) {
     header {flex-direction: column;} 
     header img{margin-bottom: 15px;}
@@ -66,6 +71,7 @@ a:hover{
     color: #fff;
     background-image: url(hero.jpg);
     background-size: cover;
+    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -91,3 +97,57 @@ a:hover{
 @media(max-width: 700px) {
     .hero h1{font-size: 2.5em;}
     .hero h3{font-size: 1.5em;}
+}
+    /* CONHEÇA O HOTEL */
+
+    .conheca-o-hotel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 50px;
+    }
+    .conheca-o-hotel h3{
+        text-align: center;
+        color: #191c03;
+        font-size: 2em;
+        margin-bottom:35px ;
+    }
+    .conheca-o-hotel p{
+        text-align: center;
+        color: #191c03;
+        max-width: 800px;
+        margin-bottom: 35px;
+    }
+    .conheca-o-hotel hr{
+        width: 200px;
+        height: 2px;
+        background-color: #191c03;
+        margin-bottom: 70px;
+        border: none;
+    }
+    .grid{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid li{
+        height: 340px;
+        padding: 20px;
+        border-radius: 4px;
+        background-clip: content-box;
+        background-size: cover;
+        background-position: center;
+    }
+    .conheca-o-hotel .grid li.small{
+        flex-basis: 40%;
+    }
+    .conheca-o-hotel .grid li.larger{
+        flex-basis: 60%;
+    }
+    @media(max-width: 700px) {
+        .conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.larger{flex-basis: 100%;}
+        /* VAI DEIXAR AS IMAGENS AJUSTADAS AO DISPOSITIVO MOVEL*/
+    }
+    /* CARACTERISTICAS */
+
+    
