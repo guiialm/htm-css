@@ -151,3 +151,52 @@ a:hover{
     /* CARACTERISTICAS */
 
     
+    .caracteristica{
+        background-color: #191c03;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 50px;
+    }
+    .caracteristica h3{
+        text-align: center;
+        color: #fff;
+        font-size: 2em;
+        margin-bottom:35px ;
+    }
+    .caracteristica p{
+        text-align: center;
+        color: #fff;
+        max-width: 800px;
+        margin-bottom: 35px;
+    }
+    .caracteristica hr{
+        width: 200px;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 70px;
+        border: none;
+    }
+    .caracteristica .grid{
+        width: 30%;
+        display: flex;
+    }
+
+    .caracteristica .grid li{
+        padding: 0 30px;
+        text-align: center;
+    }
+    .caracteristica .grid li i{
+        color: #c3c63b;
+        font-size: 3.5em;
+        margin-bottom: 30px;
+    }
+    .caracteristica .grid li h4{
+        font-size: 1.5em ;
+        color: #c3c63b;
+        margin-bottom: 30px;
+    }
+    .caracteristica .grid li p{
+        color: #fff;
+        text-align: justify;
+    }
