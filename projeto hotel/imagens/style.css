@@ -131,7 +131,7 @@ a:hover{
         flex-wrap: wrap;
     }
     .grid li{
-        height: 340px;
+        height: 350px;
         padding: 20px;
         border-radius: 4px;
         background-clip: content-box;
@@ -144,7 +144,7 @@ a:hover{
     .conheca-o-hotel .grid li.larger{
         flex-basis: 60%;
     }
-    @media(max-width: 700px) {
+    @media(max-width: 800px) {
         .conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.larger{flex-basis: 100%;}
         /* VAI DEIXAR AS IMAGENS AJUSTADAS AO DISPOSITIVO MOVEL*/
     }
@@ -171,7 +171,7 @@ a:hover{
         margin-bottom: 35px;
     }
     .caracteristica hr{
-        width: 200px;
+        width: 150px;
         height: 2px;
         background-color: #fff;
         margin-bottom: 70px;
@@ -181,7 +181,8 @@ a:hover{
         width: 30%;
         display: flex;
     }
-
+    
+    
     .caracteristica .grid li{
         padding: 0 30px;
         text-align: center;
@@ -198,5 +199,11 @@ a:hover{
     }
     .caracteristica .grid li p{
         color: #fff;
-        text-align: justify;
+        
     }
+    @media(max-width: 600px) {
+        .caracteristica .grid{
+            flex-direction: row;
+        }
+    }
+    
