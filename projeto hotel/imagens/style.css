@@ -128,7 +128,8 @@ a:hover{
     .grid{
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        
     }
     .grid li{
         height: 350px;
@@ -153,9 +154,14 @@ a:hover{
     
     .caracteristica{
         background-color: #191c03;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 80px;
+        padding-top: 100px;
         display: flex;
+        text-align: center;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
         padding: 100px 50px;
     }
     .caracteristica h3{
@@ -178,8 +184,11 @@ a:hover{
         border: none;
     }
     .caracteristica .grid{
-        width: 30%;
+        width: 70%;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
     }
     
     
@@ -200,10 +209,5 @@ a:hover{
     .caracteristica .grid li p{
         color: #fff;
         
-    }
-    @media(max-width: 600px) {
-        .caracteristica .grid{
-            flex-direction: row;
-        }
     }
     
