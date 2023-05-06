@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        input#inome, input#isobrenome{
+            background-color: rgba(245, 222, 179, 0.329);
+        }
+        input#ibotao{
+            box-shadow: 1px 1px 1px rgb(177, 176, 176);
+            display: block;
+            margin: 20px 70px;
+            background-image: linear-gradient(to right, salmon, red);
+            border-radius: 6px 6px 6px 6px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!--  O "NAME" É MAIS IMPORTANTE PRO PHP, E "ID" É MAIS IMPORTANTE PRO JS-->
+    <h1>Meu primeiro formulario!</h1>
+    <form action="cadastro.php" autocomplete="off"> <!--autocomplete nao mostra as outras senhas-->
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome"></p> <br>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="Sobrenome" id="isobrenome"></p> <br>
+        <input type="submit" value="Enviar" id="ibotao">
+
+
+    </form>
+</body>
+</html>
