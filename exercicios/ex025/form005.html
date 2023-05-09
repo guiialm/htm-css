@@ -8,12 +8,26 @@
 </head>
 <body>
     <h1>Exemplo de Formulario</h1>
-    <form action="cadastro.php" method="get" autocomplete="on"><
-    
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <!--Se colocar o name igual nos dois, ao clicar em um, desmarca o outro, tem que ser no name, nao no id-->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"><label for="ismas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+
+        </fieldset>
+    <fieldset>
+        <!--No caso, enevolpei tenis, basquete, futebol com um label-->
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+        <input type="checkbox" name="esbskt" id="iesbskt"><label for="iesbskt">Basquete</label> <br>
+        <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tenis</label> <br>
+        <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label>
+    </fieldset>
     <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </p>
-    /form>
+</form>
 </body>
 </html>
