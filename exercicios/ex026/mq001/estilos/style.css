@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* ESTILO PARA TELAS */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+header{
+    background-color: lightgray;
+}
+header h1{
+    text-align: center;
+}
+menu ul{
+    list-style-type: none; /* se quero as bolinhas do menu ou não*/
+    background-color: lightgreen;
+}
+menu li{
+    color: white;
+    background-color: blueviolet    ;
+    display: inline-block; /* deixa um do ladinho do outro*/
+    padding: 10px;
+}
+article{
+    display: block;
+    margin: auto;
+    width: 650px;
+}
